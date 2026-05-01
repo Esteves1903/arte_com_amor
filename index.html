@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte de Mão com Amor | Loja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Arte de Mão com Amor</h1>
+            <p>Artesanato feito com o coração</p>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+            <span class="icon">🛒</span>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div id="product-grid" class="product-grid">
+            </div>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>O Meu Pedido</h2>
+                <span class="close" onclick="toggleCart()">&times;</span>
+            </div>
+            <div id="cart-items" class="cart-items-list"></div>
+            <div class="cart-footer">
+                <div class="total-row">
+                    <span>Total:</span>
+                    <span id="total-price">0.00</span>€
+                </div>
+                <input type="text" id="client-name" placeholder="O seu nome">
+                <button class="btn-whatsapp" onclick="sendToWhatsApp()">
+                    Enviar pedido pelo WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
