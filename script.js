@@ -74,7 +74,7 @@ function sendToWhatsApp() {
     if (!nome) return mostrarToast("Diz-nos o teu nome primeiro!", "warning");
     if (carrinho.length === 0) return mostrarToast("O teu carrinho está vazio!", "warning");
 
-    const tel = "351912345678"; // <--- NÚMERO DA TUA CUNHADA
+    const tel = "351919761389"; // <--- NÚMERO DA TUA CUNHADA
     let texto = `Olá! Sou o/a ${nome}. Gostaria de encomendar:\n\n`;
     carrinho.forEach(item => texto += `• ${item.nome} ${item.obs ? `[${item.obs}]` : ''}\n`);
     
